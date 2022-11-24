@@ -1,0 +1,30 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--bodyColor);
+}
+.container-global {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+Figure {
+  margin: 0;
+}
+.list-element {
+  list-style: none;
+}
+.main-section-global {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.171em;
+  font-weight: 700;
+  padding-bottom: 34px;
+}
+
+.figureImgGlobal {
+  position: relative;
+}

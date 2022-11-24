@@ -1,0 +1,29 @@
+.footer__subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 570px;
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+}
+.footer__subscribe-icon-svg {
+  position: absolute;
+  right: 20%;
+}
+.footer__subscribe-email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: var(--footerAndHeaderBgC);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #fff;
+}
+.footer__subscribe-header {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

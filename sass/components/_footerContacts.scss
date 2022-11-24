@@ -1,0 +1,33 @@
+.footer__contact-telMailFooter {
+  &:visited {
+    text-decoration: none;
+  }
+  &:link {
+    color: var(--colorContactFooter);
+    text-decoration: none;
+  }
+  &:hover {
+    color: var(--colorHover);
+  }
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__contact {
+  color: var(--infoFooter);
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  top: 141px;
+  bottom: 60px;
+  margin: 0%;
+  padding: 0%;
+  line-height: 1.714em;
+}
+.footer__addres {
+  font-weight: 400;
+  color: var(--addresColor);
+  font-size: 14px;
+  position: relative;
+  top: 111px;
+  line-height: 1.714em;
+}
