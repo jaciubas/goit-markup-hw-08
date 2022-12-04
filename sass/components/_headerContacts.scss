@@ -1,37 +1,39 @@
-.header__mail-tel {
-  &:link {
-    color: var(--colorContactHeader);
-    text-decoration: none;
-  }
+@media screen and(min-width:1200px) {
+  .header__mail-tel {
+    &:link {
+      color: var(--colorContactHeader);
+      text-decoration: none;
+    }
 
-  &:visited {
-    text-decoration: none;
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover {
+      color: var(--colorHover);
+      --color2: var(--color10);
+      --color3: var(--color10);
+    }
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &:hover {
-    color: var(--colorHover);
-    --color2: var(--color10);
-    --color3: var(--color10);
+  .headerPhoneAndMailSvg {
+    position: relative;
+    top: 1px;
   }
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.headerPhoneAndMailSvg {
-  position: relative;
-  top: 1px;
-}
-.header__Contact-item {
-  list-style: none;
-}
-.header__Contact {
-  display: flex;
-  position: relative;
-  left: 45%;
-  bottom: 1.3em;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172em;
-  max-width: 400px;
-  .phoneAndMail {
-    margin-left: 40px;
+  .header__Contact-item {
+    list-style: none;
+  }
+  .header__Contact {
+    display: flex;
+    position: relative;
+    left: 45%;
+    bottom: 1.3em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.172em;
+    max-width: 400px;
+    .phoneAndMail {
+      margin-left: 40px;
+    }
   }
 }

@@ -21,59 +21,83 @@
   </head>
   <body>
     <header class="header container-global">
+      <button
+        class="menu-toggle js-open-menu mobile-menu__open-btn"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
       <a class="header__logo reference" href="./index.html"
         ><span class="header__logo-web">Web</span
         ><span class="header__logo-studio">Studio</span></a
       >
-      <nav>
-        <ul class="header__navbar1">
-          <li class="header__navbar1-item">
-            <a
-              class="reference header__navbar1-navigation navIndex"
-              href="./index.html"
-              >Agencja</a
-            >
-          </li>
-          <li class="header__navbar1-item">
-            <a
-              class="reference header__navbar1-navigation"
-              href="./portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li class="header__navbar1-item">
-            <a class="reference header__navbar1-navigation" href="#">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header__Contact">
-        <li class="header__Contact-item">
-          <a class="header__mail-tel" href="mailto:info@devstudio.com">
-            <svg
-              style="width: 14px; height: 14px"
-              class="headerPhoneAndMailSvg"
-              alt="e-mail"
-            >
-              <use xlink:href="./Images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="header__Contact-item">
-          <span class="phoneAndMail"
-            ><a class="header__mail-tel" href="tel:+48111111111">
+      <div class="menu">
+        <nav>
+          <ul class="header__navbar1">
+            <li class="header__navbar1-item">
+              <a
+                class="reference header__navbar1-navigation navIndex"
+                href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="header__navbar1-item">
+              <a
+                class="reference header__navbar1-navigation"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header__navbar1-item">
+              <a class="reference header__navbar1-navigation" href="#"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__Contact">
+          <li class="header__Contact-item">
+            <a class="header__mail-tel" href="mailto:info@devstudio.com">
               <svg
                 style="width: 14px; height: 14px"
-                alt="telefon"
                 class="headerPhoneAndMailSvg"
+                alt="e-mail"
               >
-                <use xlink:href="./Images/icons.svg#icon-smartphone"></use>
+                <use xlink:href="./Images/icons.svg#icon-envelope"></use>
               </svg>
-              +48 111 111 111</a
-            ></span
-          >
-        </li>
-      </ul>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__Contact-item">
+            <span class="phoneAndMail"
+              ><a class="header__mail-tel" href="tel:+48111111111">
+                <svg
+                  style="width: 14px; height: 14px"
+                  alt="telefon"
+                  class="headerPhoneAndMailSvg"
+                >
+                  <use xlink:href="./Images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              ></span
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -163,7 +187,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section what-we-doing">
         <div class="container-global">
           <h2 class="main-section-global">Czym się zajmujemy</h2>
 
@@ -214,12 +238,15 @@
           <h2 class="main-section-global">Nasz zespół</h2>
           <ul class="Team__cards">
             <li class="list-element">
-              <figure class="figureImgGlobal">
+              <figure class="figureImgTeam">
                 <img
-                  src="./Images/hone.jpg"
                   alt="Product Designer"
-                  width="270"
-                  height="260"
+                  class="Team__img"
+                  src="./Images/imgteamfour.jpg"
+                  srcset="
+                    ./Images/imgteamfour@2x.jpg 2x,
+                    ./Images/imgteamfour@3x.jpg 3x
+                  "
                 />
                 <figcaption class="Team__figcaption">
                   John Doe
@@ -296,12 +323,15 @@
               </figure>
             </li>
             <li class="list-element">
-              <figure class="figureImgGlobal">
+              <figure class="figureImgTeam">
                 <img
-                  src="./Images/htwo.jpg"
                   alt="Frontend Developer"
-                  width="270"
-                  height="260"
+                  class="Team__img"
+                  src="./Images/imgteamthree.jpg"
+                  srcset="
+                    ./Images/imgteamthree@2x.jpg 2x,
+                    ./Images/imgteamthree@3x.jpg 3x
+                  "
                 />
                 <figcaption class="Team__figcaption">
                   John Doe
@@ -378,12 +408,15 @@
               </figure>
             </li>
             <li class="list-element">
-              <figure class="figureImgGlobal">
+              <figure class="figureImgTeam">
                 <img
-                  src="./Images/hthree.jpg"
                   alt="Marketing"
-                  width="270"
-                  height="260"
+                  class="Team__img"
+                  src="./Images/imgteamtwo.jpg"
+                  srcset="
+                    ./Images/imgteamtwo@2x.jpg 2x,
+                    ./Images/imgteamtwo@3x.jpg 3x
+                  "
                 />
                 <figcaption class="Team__figcaption">
                   John Doe
@@ -460,12 +493,15 @@
               </figure>
             </li>
             <li class="list-element">
-              <figure class="figureImgGlobal">
+              <figure class="figureImgTeam">
                 <img
-                  src="./Images/hfour.jpg"
                   alt="UI Designer"
-                  width="270"
-                  height="260"
+                  class="Team__img"
+                  src="./Images/imgteamone.jpg"
+                  srcset="
+                    ./Images/imgteamone@2x.jpg 2x,
+                    ./Images/imgteamone@3x.jpg 3x
+                  "
                 />
                 <figcaption class="Team__figcaption">
                   John Doe
@@ -544,109 +580,117 @@
           </ul>
         </div>
       </section>
+
       <section class="section our-clients">
         <div class="container-global">
           <h2 class="main-section-global">Nasi klienci</h2>
           <ul class="our-clients__cards">
-            <li>
-              <div class="our-clients__card">
-                <svg
-                  class="our-clients__icon"
-                  alt="YA&CO   "
-                  width="106"
-                  height="60"
-                >
-                  <use xlink:href="./Images/icons.svg#icon-logo5"></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="our-clients__card">
-                <svg
-                  class="our-clients__icon"
-                  alt="Company Tagline Here"
-                  width="106"
-                  height="60"
-                >
-                  <use xlink:href="./Images/icons.svg#icon-logo4"></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="our-clients__card">
-                <svg
-                  class="our-clients__icon"
-                  alt="Company "
-                  width="106"
-                  height="60"
-                >
-                  <use xlink:href="./Images/icons.svg#icon-logo3"></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="our-clients__card">
-                <svg
-                  class="our-clients__icon"
-                  alt="Foster Peters"
-                  width="106"
-                  height="60"
-                >
-                  <use xlink:href="./Images/icons.svg#icon-logo2"></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="our-clients__card">
-                <svg
-                  class="our-clients__icon"
-                  alt="Brand"
-                  width="106"
-                  height="60"
-                >
-                  <use xlink:href="./Images/icons.svg#icon-logo1"></use>
-                </svg>
-              </div>
-            </li>
-            <li>
-              <div class="our-clients__card">
-                <svg
-                  class="our-clients__icon"
-                  alt="Company Tagline"
-                  width="106"
-                  height="60"
-                >
-                  <use xlink:href="./Images/icons.svg#icon-logo"></use>
-                </svg>
-              </div>
-            </li>
+            <div class="our-clients-mobile">
+              <li class="our-clients__item our-clients__item--primary">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="YA&CO   "
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo5"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Company Tagline Here"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo4"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Company "
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo3"></use>
+                  </svg>
+                </div>
+              </li>
+            </div>
+            <div class="our-clients-mobile">
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Foster Peters"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo2"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Brand"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo1"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="our-clients__item">
+                <div class="our-clients__card">
+                  <svg
+                    class="our-clients__icon"
+                    alt="Company Tagline"
+                    width="106"
+                    height="60"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-logo"></use>
+                  </svg>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container-global">
-        <a class="footer__logo reference" href="./index.html"
-          ><span class="header__logo-web">Web</span
-          ><span class="studio">Studio</span></a
-        >
-        <address class="footer__addres">
-          m. Warszawa,Aleje Jerozolimskie 21
-        </address>
-        <ul class="footer__contact">
-          <li class="list-element">
-            <a
-              class="footer__contact-telMailFooter"
-              href="mailto:info@devstudio.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="list-element">
-            <a class="footer__contact-telMailFooter" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+      <div class="container-global footer__wrapper">
+        <div class="footer__wrapper-contact">
+          <a class="footer__logo reference" href="./index.html"
+            ><span class="footer__logo-web">Web</span
+            ><span class="studio">Studio</span></a
+          >
+
+          <address class="footer__addres">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </address>
+          <ul class="footer__contact">
+            <li class="list-element footer__contact-element">
+              <a
+                class="footer__contact-telMailFooter"
+                href="mailto:info@devstudio.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="list-element footer__contact-element--primary">
+              <a class="footer__contact-telMailFooter" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
 
         <div class="footer__Socialmedia">
           <ul class="footer__icons-social">
@@ -710,6 +754,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer__subscribe">
           <h4 class="footer__subscribe-header">Zapisz się do Newslettera</h4>
           <form>
@@ -775,8 +820,8 @@
             <svg
               class="modal__Checkbox~primary"
               alt="Icon tel"
-              width="14"
-              height="14"
+              width="13"
+              height="13"
             >
               <use xlink:href="./Images/icons.svg#icon-checkbox"></use>
             </svg>
@@ -794,6 +839,79 @@
         </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <div class="menu-mobile js-menu-mobile is-open" id="mobile-menu">
+      <ul class="menu-mobile__nav">
+        <li class="menu-mobile__element list-element">
+          <a href="./index.html" class="menu-mobile__link">Agencja</a>
+        </li>
+        <li class="menu-mobile__element list-element">
+          <a href="./portfolio.html " class="menu-mobile__link">Portfolio</a>
+        </li>
+        <li class="menu-mobile__element list-element">
+          <a href="#" class="menu-mobile__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="mobile-contact">
+        <ul class="mobile-contact__list list-element">
+          <li class="mobile-contact__list-element list-element">
+            <a
+              href="tel:+48111111111"
+              class="mobile-contact__link mobile-contact--primary"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-contact__list-element list-element">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__element list-element">
+            <a href="https://www.instagram.com/" class="mobile-social__link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social__element list-element">
+            <a href="https://twitter.com/" class="mobile-social__link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social__element list-element">
+            <a href="https://www.facebook.com/" class="mobile-social__link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social__element list-element">
+            <a href="https://www.linkedin.com/" class="mobile-social__link"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="menu-toggle mobile-menu__close-btn js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
   </body>
 </html>

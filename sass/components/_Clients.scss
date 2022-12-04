@@ -1,48 +1,56 @@
-.Team__Socialmedia-icons {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 5px 25px 25px 25px;
-}
-.Team__Socialmedia-icons-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background-color: var(--color10);
-    --color1: var(--colorSvgSocial);
+@media screen and (min-width: 1200px) {
+  .our-clients__cards {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+  .our-clients__card {
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    padding: 16px 32px 16px 32px;
+    transition: border-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      --color1: var(--color10);
+      border-color: #2196f3;
+      cursor: pointer;
+    }
+  }
+
+  .our-clients-mobile {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .our-clients__item {
+    padding-left: 30px;
+  }
+  .our-clients__item--primary {
+    padding-left: 0;
   }
 }
-.ourTeamSvg {
-  &:hover {
-    background-color: var(--color10);
-    --color1: var(--colorSvgSocial);
+@media screen and(min-width:320px) and (max-width: 480px) {
+  .our-clients__cards {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0;
   }
-  transition: background-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.our-clients__cards {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
-.our-clients__card {
-  display: flex;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  padding: 16px 32px 16px 32px;
-  transition: border-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    --color1: var(--color10);
-    border-color: #2196f3;
-    cursor: pointer;
+  .our-clients__card {
+    margin-top: 15px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    padding: 12px 24px 12px 24px;
+    transition: border-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      --color1: var(--color10);
+      border-color: #2196f3;
+      cursor: pointer;
+    }
   }
 }
