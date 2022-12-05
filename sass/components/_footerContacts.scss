@@ -33,7 +33,53 @@
     line-height: 1.714em;
   }
 }
-@media screen and(min-width:320px) and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .footer__contact-telMailFooter {
+    &:visited {
+      text-decoration: none;
+    }
+    &:link {
+      color: var(--colorContactFooter);
+      text-decoration: none;
+    }
+    &:hover {
+      color: var(--colorHover);
+    }
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer__contact {
+    color: var(--infoFooter);
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.714em;
+  }
+  .footer__addres {
+    font-weight: 400;
+    color: var(--addresColor);
+    font-size: 14px;
+    display: flex;
+    padding-bottom: 10px;
+    line-height: 1.714em;
+  }
+  .footer__wrapper-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+    align-items: center;
+  }
+  .footer__contact-element--primary {
+    padding-top: 10px;
+    position: relative;
+    left: 5px;
+  }
+}
+@media screen and (min-width: 768px) and(max-width:1200px) {
   .footer__contact-telMailFooter {
     &:visited {
       text-decoration: none;

@@ -1,4 +1,4 @@
-@media screen and(min-width:1200px) {
+@media screen and(min-width:768px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -150,13 +150,14 @@
     }
   }
 }
-@media screen and(min-width:320px) and(max-width:480px) {
+@media screen and(max-width:768px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 320px;
+    max-width: 480px;
     min-height: 581px;
     background-color: #fff;
     display: flex;
@@ -244,6 +245,9 @@
     font-size: 12px;
     position: relative;
   }
+  .comment {
+    left: -39%;
+  }
   .modal__span-label {
     position: relative;
     bottom: 4px;
@@ -259,7 +263,9 @@
     cursor: pointer;
   }
   .modalLabelTextarea {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .modal__link {
     color: rgba(33, 150, 243, 1);
