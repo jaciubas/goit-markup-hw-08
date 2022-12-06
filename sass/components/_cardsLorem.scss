@@ -1,166 +1,88 @@
+.svgIconsLorem {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.svgIconsLoremUl {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.svgLoremLi {
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+.section-card-lorem__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section-card-lorem__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8% 12% 8% 12%;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.section-card-lorem {
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 0;
+  .section-card-lorem__description {
+    color: var(--colorLoremIpsum);
+    font-weight: 400;
+  }
+  .section-card-lorem__header {
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+}
+.cards-image {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  flex-direction: column;
+}
+
 @media screen and(min-width:1200px) {
   .svgIconsLorem {
-    display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
   }
   .svgIconsLoremUl {
-    list-style: none;
-    display: flex;
     flex-wrap: nowrap;
-    margin: 0;
     justify-content: space-around;
   }
-  .svgLoremLi {
-    margin-left: 30px;
-    &:first-child {
-      margin-left: 0px;
-    }
-  }
+
   .section-card-lorem__item {
     margin-left: 30px;
+    margin-right: 0;
   }
   .section-card-lorem__pictures {
-    display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
     padding: 25px 100px 25px 100px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
     align-items: center;
   }
   .section-card-lorem {
     display: flex;
-    font-weight: 700;
-    font-size: 14px;
-    padding-left: 0;
-
     flex-direction: row;
-    .section-card-lorem__description {
-      color: var(--colorLoremIpsum);
-      font-weight: 400;
-    }
-    .section-card-lorem__header {
-      font-weight: 700;
-      margin-top: 30px;
-      text-transform: uppercase;
-    }
   }
   .cards-image {
-    display: flex;
-    gap: 30px;
-    padding-left: 0;
+    flex-direction: row;
   }
   .cards-lorem {
     display: flex;
   }
 }
-@media screen and (max-width: 768px) {
-  .svgIconsLorem {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .svgIconsLoremUl {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  .svgLoremLi {
-    margin-left: 30px;
-    &:first-child {
-      margin-left: 0px;
-    }
-  }
-  .section-card-lorem__item {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .section-card-lorem__pictures {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 8% 12% 8% 12%;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
-  .section-card-lorem {
-    font-weight: 700;
-    font-size: 14px;
-    padding-left: 0;
-    .section-card-lorem__description {
-      color: var(--colorLoremIpsum);
-      font-weight: 400;
-    }
-    .section-card-lorem__header {
-      font-weight: 700;
-      margin-top: 30px;
-      text-transform: uppercase;
-    }
-  }
-  .cards-image {
-    display: flex;
-    gap: 30px;
-    padding-left: 0;
-    flex-direction: column;
-  }
-}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .svgIconsLorem {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .svgIconsLoremUl {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-  }
-  .svgLoremLi {
-    margin-left: 30px;
-    &:first-child {
-      margin-left: 0px;
-    }
-  }
-  .section-card-lorem__item {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .section-card-lorem__pictures {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 8% 12% 8% 12%;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
   .section-card-lorem {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 3%;
     line-height: 1.71;
-    padding-left: 0;
-    .section-card-lorem__description {
-      color: var(--colorLoremIpsum);
-      font-weight: 400;
-    }
-    .section-card-lorem__header {
-      font-weight: 700;
-      margin-top: 30px;
-      text-transform: uppercase;
-    }
-  }
-  .cards-image {
-    display: flex;
-    gap: 30px;
-    padding-left: 0;
-    flex-direction: column;
   }
   .cards-lorem {
     display: flex;
