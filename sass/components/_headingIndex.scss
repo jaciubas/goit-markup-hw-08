@@ -11,7 +11,9 @@
     align-items: center;
     display: flex;
     overflow-y: hidden;
+    background-size: cover;
   }
+
   .heading-section__wrapper {
     display: flex;
     align-items: center;
@@ -51,6 +53,28 @@
     margin-top: 30px;
     border: none;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .heading-section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(./../Images/imgheaderdesktop@2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 350dpi),
+    (min-resolution: 3dppx) {
+    .heading-section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(./../Images/imgheaderdesktop@3x.jpg);
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .heading-section {
@@ -68,6 +92,7 @@
     background-size: cover;
     overflow-y: hidden;
   }
+
   .heading-section__wrapper {
     display: flex;
     align-items: center;
@@ -105,6 +130,28 @@
     margin-top: 30px;
     border: none;
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .heading-section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(./../Images/imgheadermobile@2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 350dpi),
+    (min-resolution: 3dppx) {
+    .heading-section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(./../Images/imgheadermobile@3x.jpg);
+    }
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .heading-section {
@@ -122,6 +169,7 @@
     background-size: cover;
     overflow-y: hidden;
   }
+
   .heading-section__wrapper {
     display: flex;
     align-items: center;
@@ -160,5 +208,27 @@
     font-family: "Roboto", sans-serif;
     margin-top: 30px;
     border: none;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .heading-section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(./../Images/imgheadertablet@2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 350dpi),
+    (min-resolution: 3dppx) {
+    .heading-section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0)
+        ),
+        url(./../Images/imgheadertablet@3x.jpg);
+    }
   }
 }

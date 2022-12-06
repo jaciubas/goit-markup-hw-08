@@ -108,8 +108,8 @@
           </button>
         </div>
       </section>
-      <section class="section " style="padding-bottom: 0px">
-        <div class="container-global ">
+      <section class="section" style="padding-bottom: 0px">
+        <div class="container-global">
           <ul class="section-card-lorem">
             <div class="cards-lorem">
               <li class="list-element section-card-lorem__item">
@@ -195,7 +195,13 @@
           <ul class="cards-image">
             <li class="list-element cards-img__card">
               <img
-                src="./Images/pone.jpg"
+                src="./Images/imgpone@1x.jpg"
+                srcset="
+                  ./Images/imgpone@1x.jpg  370w,
+                  ./Images/imgpone@2x.jpg  740w,
+                  ./Images/imgpone@3x.jpg 1110w
+                "
+                sizes="(min-width:1200px) 370px, 98vw"
                 alt="kodowanie"
                 width="370"
                 height="294"
@@ -208,7 +214,13 @@
 
             <li class="list-element cards-img__card">
               <img
-                src="./Images/ptwo.jpg"
+                src="./Images/imgptwo@1x.jpg"
+                srcset="
+                  ./Images/imgptwo@1x.jpg  370w,
+                  ./Images/imgptwo@2x.jpg  740w,
+                  ./Images/imgptwo@3x.jpg 1110w
+                "
+                sizes="(min-width:1200px) 370px, 98vw"
                 alt="telefon i laptop"
                 width="370"
                 height="294"
@@ -221,7 +233,13 @@
 
             <li class="list-element cards-img__card">
               <img
-                src="./Images/pthree.jpg"
+                src="./Images/imgpthree@1x.jpg"
+                srcset="
+                  ./Images/imgpthree@1x.jpg  370w,
+                  ./Images/imgpthree@2x.jpg  740w,
+                  ./Images/imgpthree@3x.jpg 1110w
+                "
+                sizes="(min-width:1200px) 370px, 98vw"
                 alt="tablet"
                 width="370"
                 height="294"
@@ -239,16 +257,26 @@
           <h2 class="main-section-global">Nasz zespół</h2>
           <ul class="Team__cards">
             <div class="Team__cards-elements">
-              <li class="list-element Team__cards-element Team__cards-element--primary">
+              <li
+                class="list-element Team__cards-element Team__cards-element--primary"
+              >
                 <figure class="figureImgTeam">
                   <img
                     alt="Product Designer"
                     class="Team__img"
-                    src="./Images/imgteamfour.jpg"
+                    src="./Images/teamonemobile@1x.jpg"
                     srcset="
-                      ./Images/imgteamfour@2x.jpg 2x,
-                      ./Images/imgteamfour@3x.jpg 3x
+                      ./Images/teamonemobile@1x.jpg  450w,
+                      ./Images/teamonemobile@2x.jpg  900w,
+                      ./Images/teamonemobile@3x.jpg 1350w,
+                      ./Images/teamonetablet@1x.jpg  354w,
+                      ./Images/teamonetablet@2x.jpg  708w,
+                      ./Images/teamonetablet@3x.jpg 1062w,
+                      ./Images/teamonedesk@1x.jpg    270w,
+                      ./Images/teamonedesk@2x.jpg    540w,
+                      ./Images/teamonedesk@3x.jpg    810w
                     "
+                    sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 98vw"
                   />
                   <figcaption class="Team__figcaption">
                     John Doe
@@ -329,11 +357,19 @@
                   <img
                     alt="Frontend Developer"
                     class="Team__img"
-                    src="./Images/imgteamthree.jpg"
+                    src="./Images/teamtwomobile@1x.jpg"
                     srcset="
-                      ./Images/imgteamthree@2x.jpg 2x,
-                      ./Images/imgteamthree@3x.jpg 3x
+                      ./Images/teamtwomobile@1x.jpg  450w,
+                      ./Images/teamtwomobile@2x.jpg  900w,
+                      ./Images/teamtwomobile@3x.jpg 1350w,
+                      ./Images/teamtwotablet@1x.jpg  354w,
+                      ./Images/teamtwotablet@2x.jpg  708w,
+                      ./Images/teamtwotablet@3x.jpg 1062w,
+                      ./Images/teamtwodesk@1x.jpg    270w,
+                      ./Images/teamtwodesk@2x.jpg    540w,
+                      ./Images/teamtwodesk@3x.jpg    810w
                     "
+                    sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 98vw"
                   />
                   <figcaption class="Team__figcaption">
                     John Doe
@@ -416,11 +452,19 @@
                   <img
                     alt="Marketing"
                     class="Team__img"
-                    src="./Images/imgteamtwo.jpg"
+                    src="./Images/teamthreemobile@1x.jpg"
                     srcset="
-                      ./Images/imgteamtwo@2x.jpg 2x,
-                      ./Images/imgteamtwo@3x.jpg 3x
+                      ./Images/teamthreemobile@1x.jpg  450w,
+                      ./Images/teamthreemobile@2x.jpg  900w,
+                      ./Images/teamthreemobile@3x.jpg 1350w,
+                      ./Images/teamthreetablet@1x.jpg  354w,
+                      ./Images/teamthreetablet@2x.jpg  708w,
+                      ./Images/teamthreetablet@3x.jpg 1062w,
+                      ./Images/teamthreedesk@1x.jpg    270w,
+                      ./Images/teamthreedesk@2x.jpg    540w,
+                      ./Images/teamthreedesk@3x.jpg    810w
                     "
+                    sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 98vw"
                   />
                   <figcaption class="Team__figcaption">
                     John Doe
@@ -501,11 +545,19 @@
                   <img
                     alt="UI Designer"
                     class="Team__img"
-                    src="./Images/imgteamone.jpg"
+                    src="./Images/teamfourmobile@1x.jpg"
                     srcset="
-                      ./Images/imgteamone@2x.jpg 2x,
-                      ./Images/imgteamone@3x.jpg 3x
+                      ./Images/teamfourmobile@1x.jpg  450w,
+                      ./Images/teamfourmobile@2x.jpg  900w,
+                      ./Images/teamfourmobile@3x.jpg 1350w,
+                      ./Images/teamfourtablet@1x.jpg  354w,
+                      ./Images/teamfourtablet@2x.jpg  708w,
+                      ./Images/teamfourtablet@3x.jpg 1062w,
+                      ./Images/teamfourdesk@1x.jpg    270w,
+                      ./Images/teamfourdesk@2x.jpg    540w,
+                      ./Images/teamfourdesk@3x.jpg    810w
                     "
+                    sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 98vw"
                   />
                   <figcaption class="Team__figcaption">
                     John Doe
@@ -591,7 +643,7 @@
           <h2 class="main-section-global">Nasi klienci</h2>
           <ul class="our-clients__cards">
             <div class="our-clients-mobile our-clients-tablet">
-              <li class="our-clients__item our-clients__item--primary ">
+              <li class="our-clients__item our-clients__item--primary">
                 <div class="our-clients__card">
                   <svg
                     class="our-clients__icon"
@@ -629,7 +681,7 @@
               </li>
             </div>
             <div class="our-clients-mobile">
-              <li class="our-clients__item our-clients__item--primary ">
+              <li class="our-clients__item our-clients__item--primary">
                 <div class="our-clients__card">
                   <svg
                     class="our-clients__icon"
@@ -670,122 +722,120 @@
         </div>
       </section>
     </main>
-    
+
     <footer class="footer">
       <div class="container-global footer__wrapper">
         <!-- <div class="footer__wrapper-elements"> -->
-          <div class="footer__wrapper-contact">
-            <a class="footer__logo reference" href="./index.html"
-              ><span class="footer__logo-web">Web</span
-              ><span class="studio">Studio</span></a
-            >
+        <div class="footer__wrapper-contact">
+          <a class="footer__logo reference" href="./index.html"
+            ><span class="footer__logo-web">Web</span
+            ><span class="studio">Studio</span></a
+          >
 
-            <address class="footer__addres">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </address>
-            <ul class="footer__contact">
-              <li class="list-element footer__contact-element">
-                <a
-                  class="footer__contact-telMailFooter"
-                  href="mailto:info@devstudio.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="list-element footer__contact-element--primary">
-                <a class="footer__contact-telMailFooter" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__Socialmedia">
-            <ul class="footer__icons-social">
-              <li><h4 class="footer__social-header">Dołącz do nas</h4></li>
-
-              <li class="footer__icon-social">
-                <a class="social-footer" href="#">
-                  <div class="footer__box-icon">
-                    <svg
-                      class="footer__Social-icon-svg"
-                      alt="Instagram"
-                      width="20"
-                      height="20"
-                    >
-                      <use
-                        xlink:href="./Images/icons.svg#icon-instagram2"
-                      ></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="social-footer" href="#">
-                  <div class="footer__box-icon">
-                    <svg
-                      class="footer__Social-icon-svg"
-                      alt="Twitter"
-                      width="20"
-                      height="20"
-                    >
-                      <use xlink:href="./Images/icons.svg#icon-twitter1"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="social-footer" href="#">
-                  <div class="footer__box-icon">
-                    <svg
-                      class="footer__Social-icon-svg"
-                      alt="Facebook"
-                      width="20"
-                      height="20"
-                    >
-                      <use xlink:href="./Images/icons.svg#icon-facebook1"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="social-footer" href="#">
-                  <div class="footer__box-icon">
-                    <svg
-                      class="footer__Social-icon-svg"
-                      alt="Linkedin"
-                      width="20"
-                      height="20"
-                    >
-                      <use xlink:href="./Images/icons.svg#icon-linkedin1"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <address class="footer__addres">
+            m. Warszawa, Aleje Jerozolimskie 21
+          </address>
+          <ul class="footer__contact">
+            <li class="list-element footer__contact-element">
+              <a
+                class="footer__contact-telMailFooter"
+                href="mailto:info@devstudio.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="list-element footer__contact-element--primary">
+              <a class="footer__contact-telMailFooter" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="footer__subscribe">
-          <h4 class="footer__subscribe-header">Zapisz się do Newslettera</h4>
-          <form>
-            <input
-              type="email"
-              class="footer__subscribe-email"
-              placeholder="E-mail"
-            />
-          </form>
-          <button type="submit" class="footer__subscribe-btn">
-            Zapisz się
-            <svg
-              class="footer__subscribe-icon-svg"
-              alt="Ikona wysyłania"
-              width="24"
-              height="24"
-            >
-              <use xlink:href="./Images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+
+        <div class="footer__Socialmedia">
+          <ul class="footer__icons-social">
+            <li><h4 class="footer__social-header">Dołącz do nas</h4></li>
+
+            <li class="footer__icon-social">
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Instagram"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-instagram2"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Twitter"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Facebook"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="social-footer" href="#">
+                <div class="footer__box-icon">
+                  <svg
+                    class="footer__Social-icon-svg"
+                    alt="Linkedin"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="./Images/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="footer__subscribe">
+        <h4 class="footer__subscribe-header">Zapisz się do Newslettera</h4>
+        <form>
+          <input
+            type="email"
+            class="footer__subscribe-email"
+            placeholder="E-mail"
+          />
+        </form>
+        <button type="submit" class="footer__subscribe-btn">
+          Zapisz się
+          <svg
+            class="footer__subscribe-icon-svg"
+            alt="Ikona wysyłania"
+            width="24"
+            height="24"
+          >
+            <use xlink:href="./Images/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- </div> -->
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
